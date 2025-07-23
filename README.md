@@ -7,16 +7,14 @@
 
 ## Features
 
-Hide UI elements until hover (sidebar, toolbar, breadcrumbs)
-Smart bullet visibility based on node state
-Unified dark theme with 
-#17181D background
-Smooth transitions for better UX
-Creates a minimal, distraction-free interface that reveals controls when needed.
+- Hide UI elements until hover (sidebar, toolbar, breadcrumbs)
+- Smart bullet visibility based on node state
+- Unified dark theme with #17181D background
+- Smooth transitions for better UX
                                                                                                     
 
 ## Installation & Use
 
-1.Go to Install [Tana Enhancer](https://chromewebstore.google.com/detail/tana-enhancer/ajokoklihkcaomlpphlbbmgkgilckfig)
-2.Open extension
-3.Paste code in the **Custom CSS** field
+1. Go to Install [Tana Enhancer](https://chromewebstore.google.com/detail/tana-enhancer/ajokoklihkcaomlpphlbbmgkgilckfig)
+2. Open extension
+3. Paste code in the **Custom CSS** field
