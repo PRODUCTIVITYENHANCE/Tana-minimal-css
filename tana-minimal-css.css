@@ -1,0 +1,70 @@
+/* Bullet 狀態控制 */
+.bullet.isEmpty::after,
+.bullet.isExpanded::after {
+  opacity: 0;
+}
+
+.bullet::after {
+  opacity: 1;
+}
+
+.bulletSide:hover .bullet::after,
+.bulletSide .bullet:focus::after,
+.bulletSide.collapsed .bullet::after {
+  opacity: 1;
+}
+
+/* 縮進調整 */
+.OutlinerIndentLine-module_wrapper__c1UBL {
+  margin-left: calc(var(--levelIndent) * 0.5);
+}
+
+/* 全域 hover 效果 - 統一處理目標元素 */
+:root:has([data-panel-toolbar="true"]:hover) [data-panel-breadcrumbs="true"],
+:root:has([data-panel-toolbar="true"]:hover) [data-intro-transition="true"],
+:root:has([data-panel-toolbar="true"]:hover) .navtarget,
+:root:has([data-panel-toolbar="true"]:hover) .UnifiedSidebar-module_minibar__pCA7P,
+:root:has([data-panel-toolbar="true"]:hover) .AppTitleBar-module_titlebarContent__eLmuv,
+:root:has([class*="NodePanelHeader"]:hover) [data-panel-breadcrumbs="true"],
+:root:has([class*="NodePanelHeader"]:hover) [data-intro-transition="true"],
+:root:has([class*="NodePanelHeader"]:hover) .navtarget,
+:root:has([class*="NodePanelHeader"]:hover) .UnifiedSidebar-module_minibar__pCA7P,
+:root:has([class*="NodePanelHeader"]:hover) .AppTitleBar-module_titlebarContent__eLmuv,
+:root:has(.UnifiedSidebar-module_el__NWvG0:hover) [data-panel-breadcrumbs="true"],
+:root:has(.UnifiedSidebar-module_el__NWvG0:hover) [data-intro-transition="true"],
+:root:has(.UnifiedSidebar-module_el__NWvG0:hover) .navtarget,
+:root:has(.UnifiedSidebar-module_el__NWvG0:hover) .UnifiedSidebar-module_minibar__pCA7P,
+:root:has(.UnifiedSidebar-module_el__NWvG0:hover) .AppTitleBar-module_titlebarContent__eLmuv,
+:root:has(.AppTitleBar-module_titlebar__IutCu:hover) [data-panel-breadcrumbs="true"],
+:root:has(.AppTitleBar-module_titlebar__IutCu:hover) [data-intro-transition="true"],
+:root:has(.AppTitleBar-module_titlebar__IutCu:hover) .navtarget,
+:root:has(.AppTitleBar-module_titlebar__IutCu:hover) .UnifiedSidebar-module_minibar__pCA7P,
+:root:has(.AppTitleBar-module_titlebar__IutCu:hover) .AppTitleBar-module_titlebarContent__eLmuv {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+/* 預設隱藏狀態 - 統一 transition */
+[data-panel-toolbar="true"] [data-panel-breadcrumbs="true"],
+[data-panel-toolbar="true"] [data-intro-transition="true"],
+[class*="NodePanelHeader"] .navtarget,
+.UnifiedSidebar-module_minibar__pCA7P,
+.AppTitleBar-module_titlebarContent__eLmuv {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+/* 背景色統一設定 */
+.UnifiedSidebar-module_el__NWvG0,
+.UnifiedSidebar-module_el__NWvG0 .UnifiedSidebar-module_wrapper__lP7QI,
+.AppTitleBar-module_titlebar__IutCu,
+[class^="app"] {
+  background-color: #17181D !important;
+}
+
+/* 隱藏元素 */
+div[class^="NodePanelBackgroundEffect-"],
+.PanelHeaderMenu-module_wrapper__0Utw1 {
+  display: none !important;
+}
